@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./LogInPopup.css";
-
 import { assets } from "../../assets/assets";
 
-const LogInPopup = () => {
+const LogInPopup = ({ onClose }) => {
+  // ✅ Define state first
   const [isLogin, setIsLogin] = useState(true);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,6 +27,8 @@ const LogInPopup = () => {
       }}
     >
       <div className="popup">
+        <button className="close-button" onClick={onClose}>X</button>
+
         <div className="popup-form-container">
           <h2>{isLogin ? "Login" : "Register"}</h2>
           <p onClick={() => setIsLogin(!isLogin)} className="toggle-text">
