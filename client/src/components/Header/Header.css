@@ -1,0 +1,98 @@
+.header {
+  position: relative;
+  height: 40vh;
+  margin: 30px auto;
+  background: url("https://jayaindustries.in/wp-content/uploads/2021/12/Banner_014.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  padding: 1rem;
+  color: white;
+  animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+  color: white;
+  font-size: max(1.2vw, 12px);
+}
+
+.header-contents button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.header-contents button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.03);
+}
+
+/* 🌐 Responsive for all devices */
+@media (max-width: 768px) {
+  .header {
+    height: 50vh;
+  }
+
+  .header-contents {
+    max-width: 90%;
+    left: 5%;
+    bottom: 8%;
+    gap: 12px;
+  }
+
+  .header-contents h2 {
+    font-size: 6vw;
+  }
+
+  .header-contents p {
+    font-size: 3.5vw;
+  }
+
+  .header-contents button {
+    padding: 10px 20px;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 55vh;
+  }
+
+  .header-contents h2 {
+    font-size: 7vw;
+  }
+
+  .header-contents p {
+    font-size: 4vw;
+  }
+
+  .header-contents button {
+    font-size: 4vw;
+    padding: 10px 18px;
+  }
+}

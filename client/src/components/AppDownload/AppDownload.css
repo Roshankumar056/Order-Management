@@ -1,0 +1,78 @@
+.app-download {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.app-download p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.playStore,
+.appStore {
+  height: 60px;
+  width: auto;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.playStore:hover,
+.appStore:hover {
+  transform: scale(1.05);
+}
+
+/* Small phones (portrait) */
+@media (max-width: 480px) {
+  .app-download p {
+    font-size: 16px;
+  }
+
+  .playStore,
+  .appStore {
+    height: 45px;
+    margin: 8px 4px;
+  }
+}
+
+/* Phones and small tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  .app-download p {
+    font-size: 18px;
+  }
+
+  .playStore,
+  .appStore {
+    height: 50px;
+  }
+}
+
+/* Tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app-download p {
+    font-size: 20px;
+  }
+
+  .playStore,
+  .appStore {
+    height: 55px;
+  }
+}
+
+/* Medium to large desktops */
+@media (min-width: 1025px) {
+  .app-download p {
+    font-size: 22px;
+  }
+
+  .playStore,
+  .appStore {
+    height: 60px;
+  }
+}
